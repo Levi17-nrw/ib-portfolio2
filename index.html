@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IB Workspace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR: binder tabs -->
+  <nav class="binder">
+    <div class="binder-head">
+      <span class="binder-mark">IB</span>
+      <span class="binder-title">Workspace</span>
+    </div>
+
+    <a href="index.html" class="tab tab--home active">
+      <span class="tab-code">00</span>
+      <span class="tab-name">Dashboard</span>
+    </a>
+
+    <div class="tab-group-label">Group 1 — Language &amp; Literature</div>
+    <a href="subjects/english.html" class="tab" style="--c: var(--c-english)">
+      <span class="tab-code">1.1 HL</span>
+      <span class="tab-name">English A: Lang &amp; Lit</span>
+    </a>
+
+    <div class="tab-group-label">Group 2 — Language Acquisition</div>
+    <a href="subjects/german.html" class="tab" style="--c: var(--c-german)">
+      <span class="tab-code">2.1 SL</span>
+      <span class="tab-name">German B</span>
+    </a>
+
+    <div class="tab-group-label">Group 3 — Individuals &amp; Societies</div>
+    <a href="subjects/digital-societies.html" class="tab" style="--c: var(--c-ds)">
+      <span class="tab-code">3.1 HL</span>
+      <span class="tab-name">Digital Societies</span>
+    </a>
+
+    <div class="tab-group-label">Group 4 — Sciences</div>
+    <a href="subjects/ess.html" class="tab" style="--c: var(--c-ess)">
+      <span class="tab-code">4.1 SL</span>
+      <span class="tab-name">Environmental Systems &amp; Societies</span>
+    </a>
+
+    <div class="tab-group-label">Group 5 — Mathematics</div>
+    <a href="subjects/maths.html" class="tab" style="--c: var(--c-maths)">
+      <span class="tab-code">5.1 SL</span>
+      <span class="tab-name">Mathematics: AI</span>
+    </a>
+
+    <div class="tab-group-label">Group 4 — Sciences (cont.)</div>
+    <a href="subjects/business.html" class="tab" style="--c: var(--c-business)">
+      <span class="tab-code">3.2 HL</span>
+      <span class="tab-name">Business Management</span>
+    </a>
+
+    <div class="tab-group-label">Core</div>
+    <a href="subjects/tok-cas.html" class="tab" style="--c: var(--c-core)">
+      <span class="tab-code">core</span>
+      <span class="tab-name">TOK &amp; CAS</span>
+    </a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="workspace">
+
+    <header class="workspace-header">
+      <p class="eyebrow">Diploma Programme · Cohort 2027</p>
+      <h1>Your six subjects, one shelf.</h1>
+      <p class="lede">Notes, deadlines, and coursework for every subject, organised the way your binder should have been.</p>
+    </header>
+
+    <section class="panel">
+      <h2 class="panel-title">Upcoming dates</h2>
+      <p class="panel-sub">Add deadlines on each subject page — they'll appear here, soonest first.</p>
+      <ul class="date-list" id="date-list">
+        <!-- Example entries — edit per subject, or wire to shared data later -->
+        <li class="date-row" style="--c: var(--c-german)">
+          <span class="date-pill">SL</span>
+          <span class="date-when">18 Jun</span>
+          <span class="date-what">German B — Paper 1 mock</span>
+          <span class="date-tag">Exam</span>
+        </li>
+        <li class="date-row" style="--c: var(--c-maths)">
+          <span class="date-pill">SL</span>
+          <span class="date-when">22 Jun</span>
+          <span class="date-what">Maths AI — IA draft due</span>
+          <span class="date-tag">Coursework</span>
+        </li>
+        <li class="date-row" style="--c: var(--c-business)">
+          <span class="date-pill">HL</span>
+          <span class="date-when">29 Jun</span>
+          <span class="date-what">Business Mgmt — Unit 3 revision notes</span>
+          <span class="date-tag">Revision</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">Subject shelf</h2>
+      <div class="grid">
+
+        <a href="subjects/english.html" class="card" style="--c: var(--c-english)">
+          <span class="card-code">1.1 HL</span>
+          <h3>English A: Lang &amp; Lit</h3>
+          <p>Notes, exam dates, IO &amp; written task tracker.</p>
+        </a>
+
+        <a href="subjects/digital-societies.html" class="card" style="--c: var(--c-ds)">
+          <span class="card-code">3.1 HL</span>
+          <h3>Digital Societies</h3>
+          <p>Case studies, IA progress, paper schedule.</p>
+        </a>
+
+        <a href="subjects/business.html" class="card" style="--c: var(--c-business)">
+          <span class="card-code">3.2 HL</span>
+          <h3>Business Management</h3>
+          <p>Unit notes, IA, past paper bank.</p>
+        </a>
+
+        <a href="subjects/german.html" class="card" style="--c: var(--c-german)">
+          <span class="card-code">2.1 SL</span>
+          <h3>German B</h3>
+          <p>Vocab lists, writing tasks, oral prep.</p>
+        </a>
+
+        <a href="subjects/ess.html" class="card" style="--c: var(--c-ess)">
+          <span class="card-code">4.1 SL</span>
+          <h3>Environmental Systems &amp; Societies</h3>
+          <p>Topic notes, IA fieldwork, exam dates.</p>
+        </a>
+
+        <a href="subjects/maths.html" class="card" style="--c: var(--c-maths)">
+          <span class="card-code">5.1 SL</span>
+          <h3>Mathematics: AI</h3>
+          <p>Topic-by-topic notes, IA, formula booklet links.</p>
+        </a>
+
+        <a href="subjects/tok-cas.html" class="card card--core" style="--c: var(--c-core)">
+          <span class="card-code">core</span>
+          <h3>TOK &amp; CAS</h3>
+          <p>Essay planning, exhibition, CAS log.</p>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
